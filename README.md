@@ -12,7 +12,6 @@ If who Someone Use this repo helpful, I am glad Thanks For using
     * lint
         + prettier
         + stylelint
-        + classnames
     * styling
         + scss
         + classnames
@@ -28,5 +27,5 @@ If who Someone Use this repo helpful, I am glad Thanks For using
 #### email : leejonghun32425@gmail.com
 
 #### github :https://github.com/FrontLeejonghun
-
+Cancel changes
 
