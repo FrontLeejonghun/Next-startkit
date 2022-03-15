@@ -2,27 +2,27 @@
 
 If who Someone Use this repo helpful, I am glad Thanks For using
 
-* dependencies
-    * default
-        + typescript
-        + next11
-        + react
-    * state
-        + recoil
-    * lint
-        + prettier
-        + stylelint
-    * styling
-        + scss
-        + classnames
-    * Promise based HTTP client for the browser
-        + axios
-    * Testing
-        * cypress (e2e)
-            * cypress-react-selector
-        * jest(unit test)
+## dependencies
+- default 
+  - typescript 
+  - next11 
+  - react 
+- state 
+  - recoil 
+- lint 
+  - prettier 
+  - stylelint 
+- styling 
+  - scss 
+  - classnames 
+- Promise based HTTP client for the browser 
+  - axios 
+- Testing 
+  - cypress (e2e)
+  - cypress-react-selector 
+  - jest(unit test)
 
-*Folder Dir 
+##Folder Dir 
 - __Next\-startkit__
     - [LICENSE](LICENSE)
     - [READM1E.md](READM1E.md)
