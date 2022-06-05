@@ -5,7 +5,7 @@ If who Someone Use this repo helpful, I am glad Thanks For using
 ## dependencies
 - default 
   - typescript 
-  - next11 
+  - next12 
   - react 
 - state 
   - recoil 
@@ -21,8 +21,9 @@ If who Someone Use this repo helpful, I am glad Thanks For using
   - cypress (e2e)
   - cypress-react-selector 
   - jest(unit test)
+  - storybook (ui)
 
-##Folder Dir 
+### Folder Dir 
 - __Next\-startkit__
     - [LICENSE](LICENSE)
     - [READM1E.md](READM1E.md)
