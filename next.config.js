@@ -1,8 +1,6 @@
 /** @type {import('next').NextConfig} */
 const path = require('path');
 
-const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
-
 module.exports = {
   reactStrictMode: true,
   pwa: {
@@ -10,19 +8,24 @@ module.exports = {
     dest: 'public',
   },
   typescript: {},
+  serverRuntimeConfig: {
+    PROJECT_ROOT: __dirname,
+  },
   distDir: '.next',
-  webpack(config, options) {
-    const { dev, isServer } = options;
-    if (dev && isServer) {
-      config.plugins.push(new ForkTsCheckerWebpackPlugin());
-    }
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ['@svgr/webpack'],
+    });
     return config;
   },
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'src/styles')],
+    prependData: `@import "./lib/mixins.scss"; @import "./lib/variables.scss";`,
+  },
   trailingSlash: true,
+  swcMinify: true,
   compiler: {
     reactRemoveProperties: { properties: ['^data-cy$'] },
-    removeConsole: {
-      exclude: ['error'],
-    },
   },
 };
