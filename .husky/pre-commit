@@ -1,5 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
-echo 'sadasdsads'
 
-npm pre-commit
+yarn pre-commit
