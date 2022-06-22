@@ -10,7 +10,6 @@ interface ButtonProps {
   onClick?: () => void;
 }
 
-
 export const SampleButton = ({ type = 'primary', label, ...rest }: ButtonProps) => {
   return (
     <button type="button" className={cx('button', type)} {...rest}>
