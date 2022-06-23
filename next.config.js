@@ -21,7 +21,7 @@ module.exports = {
   },
   sassOptions: {
     includePaths: [path.join(__dirname, 'src/styles')],
-    prependData: `@import "./lib/mixins.scss"; @import "./lib/variables.scss";`,
+    prependData: `@import "./common/_mixins.scss"; @import "./common/_variables.scss";`,
   },
   trailingSlash: true,
   swcMinify: true,

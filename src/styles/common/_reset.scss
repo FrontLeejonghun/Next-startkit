@@ -83,10 +83,12 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
+  font: inherit;
+  line-height: 1.2;
   vertical-align: baseline;
-  font-style: normal;
 }
 
+/* HTML5 display-role reset for older browsers */
 article,
 aside,
 details,
@@ -102,7 +104,16 @@ section {
 }
 
 body {
-  line-height: 1;
+  line-height: 1.2;
+}
+
+:host {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
 }
 
 blockquote,
@@ -110,12 +121,16 @@ q {
   quotes: none;
 }
 
-blockquote::before,
-blockquote::after,
-q::before,
-q::after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 table {
@@ -123,10 +138,6 @@ table {
   border-spacing: 0;
 }
 
-dl,
-ul,
-ol,
-menu,
-li {
-  list-style: none;
+strong {
+  font-weight: bold;
 }
