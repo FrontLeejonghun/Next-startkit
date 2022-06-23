@@ -5,15 +5,15 @@
   "scripts": {
     "build": "next build && dist-size .next/",
     "build-storybook": "build-storybook -s public",
+    "storybook": "start-storybook -p 6006 -s ./public",
     "cypress": "cypress open",
+    "commitlint": "commitlint -e",
+    "pre-commit": "next lint --fix && git add -A .",
+    "postinstall": "husky install",
+    "test": "jest",
     "dev": "next dev",
     "lint": "next lint",
-    "start": "next start",
-    "storybook": "start-storybook -p 6006 -s ./public",
-    "test": "jest",
-    "commitlint": "commitlint -e",
-    "pre-commit": "next lint --fix",
-    "postinstall": "husky install"
+    "start": "next start"
   },
   "dependencies": {
     "axios": "^0.27.2",
