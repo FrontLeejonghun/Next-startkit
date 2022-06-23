@@ -9,16 +9,13 @@
   ],
   "rules": {
     "@next/next/no-document-import-in-page": "off",
-    "prettier/prettier": [
-      "warn",
-      { "usePrettierrc": true }
-    ],
+    "prettier/prettier": ["warn", { "usePrettierrc": true }],
     "no-undef": "error",
     "no-unused-vars": "warn",
     "import/order": [
       "error",
       {
-        "groups": ["builtin","external","internal"],
+        "groups": ["builtin", "external", "internal"],
         "pathGroups": [
           {
             "pattern": "react",

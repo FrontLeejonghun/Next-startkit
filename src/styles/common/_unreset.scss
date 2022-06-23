@@ -29,7 +29,7 @@ figure {
 }
 
 q {
-  quotes: "“" "”" "‘" "’";
+  quotes: '“' '”' '‘' '’';
 
   &::before {
     content: open-quote;
@@ -66,7 +66,7 @@ h3 {
 
 h4 {
   margin: 1.33em 0;
-  font-size: 1.00em;
+  font-size: 1em;
   font-weight: bold;
 }
 
@@ -83,10 +83,9 @@ h6 {
 }
 
 article,
- aside,
- nav,
- section {
-
+aside,
+nav,
+section {
   h1 {
     margin: 0.83em 0;
     font-size: 1.5em;
@@ -94,10 +93,9 @@ article,
   }
 
   article,
- aside,
- nav,
- section {
-
+  aside,
+  nav,
+  section {
     h1 {
       margin: 1em 0;
       font-size: 1.17em;
@@ -105,21 +103,19 @@ article,
     }
 
     article,
- aside,
- nav,
- section {
-
+    aside,
+    nav,
+    section {
       h1 {
         margin: 1.33em 0;
-        font-size: 1.00em;
+        font-size: 1em;
         font-weight: bold;
       }
 
       article,
- aside,
- nav,
- section {
-
+      aside,
+      nav,
+      section {
         h1 {
           margin: 1.67em 0;
           font-size: 0.83em;
@@ -127,10 +123,9 @@ article,
         }
 
         article,
- aside,
- nav,
- section {
-
+        aside,
+        nav,
+        section {
           h1 {
             margin: 2.33em 0;
             font-size: 0.67em;
@@ -157,7 +152,7 @@ tr {
 }
 
 td,
- th {
+th {
   padding: 1px;
   vertical-align: inherit;
 }
@@ -171,7 +166,7 @@ caption {
 }
 
 ul,
- menu {
+menu {
   margin: 1em 0;
   padding: 0 0 0 40px;
   list-style-type: disc;
@@ -184,15 +179,13 @@ ol {
 }
 
 ul,
- ol {
-
+ol {
   ul {
     list-style-type: circle;
   }
 
   ul,
- ol {
-
+  ol {
     ul {
       list-style-type: square;
     }
@@ -208,14 +201,13 @@ dl {
 }
 
 ul,
- ol,
- menu,
- dl {
-
+ol,
+menu,
+dl {
   ul,
- ol,
- menu,
- dl {
+  ol,
+  menu,
+  dl {
     margin: 0;
   }
 }
@@ -243,31 +235,31 @@ ins {
 }
 
 b,
- strong {
+strong {
   font-weight: bold;
 }
 
 i,
- cite,
- em,
- var,
- address,
- dfn {
+cite,
+em,
+var,
+address,
+dfn {
   font-style: italic;
   font-weight: inherit;
 }
 
 abbr[title],
- dfn[title] {
+dfn[title] {
   border-bottom: 0;
   font-weight: inherit;
   cursor: default;
 }
 
 tt,
- code,
- kbd,
- samp {
+code,
+kbd,
+samp {
   font-family: monospace;
   font-weight: inherit;
 }
@@ -296,7 +288,7 @@ small {
 }
 
 sub,
- sup {
+sup {
   position: static;
   font-weight: inherit;
   line-height: inherit;
@@ -315,7 +307,6 @@ sup {
 }
 
 ruby {
-
   > rt {
     font-size: 50%;
   }
@@ -324,6 +315,3 @@ ruby {
 iframe {
   border: 2px inset;
 }
-
-
-

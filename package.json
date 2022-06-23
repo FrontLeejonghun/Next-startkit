@@ -8,7 +8,7 @@
     "storybook": "start-storybook -p 6006 -s ./public",
     "cypress": "cypress open",
     "commitlint": "commitlint -e",
-    "pre-commit": "next lint --fix && git add -A .",
+    "pre-commit": "next lint --fix && prettier --check '**' --write && git add -A .",
     "postinstall": "husky install",
     "test": "jest",
     "dev": "next dev",
