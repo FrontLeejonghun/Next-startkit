@@ -3,10 +3,6 @@ const path = require('path');
 
 module.exports = {
   reactStrictMode: true,
-  pwa: {
-    disable: true,
-    dest: 'public',
-  },
   typescript: {},
   serverRuntimeConfig: {
     PROJECT_ROOT: __dirname,

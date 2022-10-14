@@ -5,13 +5,17 @@
     "next",
     "prettier",
     "next/core-web-vitals",
-    "plugin:react-hooks/recommended"
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/eslint-recommended"
   ],
+  "parser":"@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
   "rules": {
-    "@next/next/no-document-import-in-page": "off",
     "prettier/prettier": ["warn", { "usePrettierrc": true }],
-    "no-undef": "error",
-    "no-unused-vars": "warn",
+    "no-undef": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@next/next/no-img-element": "off",
     "import/order": [
       "error",
       {
@@ -40,3 +44,4 @@
     "jest": true
   }
 }
+

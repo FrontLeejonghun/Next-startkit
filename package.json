@@ -5,24 +5,25 @@
   "scripts": {
     "build": "next build && dist-size .next/",
     "build-storybook": "build-storybook -s public",
-    "storybook": "start-storybook -p 6006 -s ./public",
-    "cypress": "cypress open",
     "commitlint": "commitlint -e",
-    "pre-commit": "next lint --fix && prettier --check '**' --write && git add -A .",
-    "postinstall": "husky install",
-    "test": "jest",
+    "cypress": "cypress open",
     "dev": "next dev",
+    "postinstall": "husky install",
     "lint": "next lint",
-    "start": "next start"
+    "pre-commit": "next lint --fix && prettier --check \"src/**/*\" --write && stylelint \"src/**/**.scss\" --fix ",
+    "start": "next start",
+    "storybook": "start-storybook -p 6006 -s ./public",
+    "style-lint": "stylelint '**/*.scss' --fix",
+    "test": "jest"
   },
   "dependencies": {
     "axios": "^0.27.2",
     "classnames": "^2.3.1",
-    "next": "^12.1.6",
+    "next": "^12.2.5",
     "react": "18.1.0",
     "react-dom": "18.1.0",
-    "recoil": "^0.7.2",
-    "sass": "^1.52.2"
+    "sass": "^1.52.2",
+    "zustand": "^4.1.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.3",
@@ -40,6 +41,8 @@
     "@types/node": "^14.14.13",
     "@types/react": "18.0.11",
     "@types/react-dom": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "@typescript-eslint/parser": "^5.38.0",
     "cypress": "^10.0.2",
     "cypress-react-selector": "^2.3.12",
     "dist-size": "^0.4.0",
@@ -51,14 +54,12 @@
     "husky": "^8.0.0",
     "jest": "28.1.0",
     "prettier": "^2.4.1",
-    "react-recoilize": "^1.0.3",
     "sass-loader": "^10.1.1",
     "style-loader": "^2.0.0",
     "stylelint": "^14.8.5",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-property-sort-order-smacss": "^9.0.0",
     "stylelint-config-standard": "^25.0.0",
-    "stylelint-scss": "^4.2.0",
     "ts-jest": "28.0.4",
     "typescript": "^4.4.3"
   }
