@@ -1,6 +1,7 @@
 const sortOrderSMACSS = require('stylelint-config-property-sort-order-smacss/generate');
 module.exports = {
   extends: ['stylelint-config-prettier'],
+  customSyntax: 'postcss-scss',
   plugins: ['stylelint-order'],
   rules: {
     'color-hex-case': 'lower',

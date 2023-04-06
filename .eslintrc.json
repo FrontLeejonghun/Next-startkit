@@ -8,30 +8,33 @@
     "plugin:react-hooks/recommended",
     "plugin:@typescript-eslint/eslint-recommended"
   ],
-  "parser":"@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "eslint-plugin-simple-import-sort",
+    "import"
+  ],
   "rules": {
-    "prettier/prettier": ["warn", { "usePrettierrc": true }],
+    "prettier/prettier": [
+      "warn",
+      {
+        "usePrettierrc": true
+      }
+    ],
     "no-undef": "off",
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": "warn",
     "@next/next/no-img-element": "off",
-    "import/order": [
-      "error",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "react/jsx-sort-props": [
+      2,
       {
-        "groups": ["builtin", "external", "internal"],
-        "pathGroups": [
-          {
-            "pattern": "react",
-            "group": "external",
-            "position": "before"
-          }
-        ],
-        "pathGroupsExcludedImportTypes": ["builtin"],
-        "alphabetize": {
-          "order": "asc",
-          "caseInsensitive": true
-        }
+        "callbacksLast": true,
+        "shorthandFirst": false,
+        "shorthandLast": true,
+        "ignoreCase": true,
+        "noSortAlphabetically": false
       }
     ]
   },
@@ -44,4 +47,3 @@
     "jest": true
   }
 }
-

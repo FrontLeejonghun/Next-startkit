@@ -1,5 +1,6 @@
-import React from 'react';
 import classNames from 'classnames/bind';
+import React from 'react';
+
 import styles from './SampleButton.module.scss';
 
 const cx = classNames.bind(styles);
@@ -12,7 +13,7 @@ interface ButtonProps {
 
 export const SampleButton = ({ type = 'primary', label, ...rest }: ButtonProps) => {
   return (
-    <button type="button" className={cx('button', type)} {...rest}>
+    <button className={cx('button', type)} type="button" {...rest}>
       {label}
     </button>
   );

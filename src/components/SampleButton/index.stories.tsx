@@ -1,5 +1,6 @@
-import React from 'react';
 import { ComponentStory, Meta } from '@storybook/react';
+import React from 'react';
+
 import { SampleButton } from '.';
 
 export default {
